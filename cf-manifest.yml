@@ -1,0 +1,11 @@
+--- 
+applications: 
+  - 
+    buildpack: java_buildpack
+    instances: 1
+    memory: 750M
+    name: service-discovery
+    path: /build/libs/service-discovery-1.0.0.jar
+    random-route: true
+    timeout: 180
+    

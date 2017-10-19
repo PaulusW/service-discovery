@@ -14,14 +14,17 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
+jar {
+	baseName = 'service-discovery'
+}
+
 group = 'com.cgi'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0'
 sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
 }
-
 
 ext {
 	springCloudVersion = 'Dalston.SR4'
